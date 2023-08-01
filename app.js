@@ -20,6 +20,10 @@ app.get("/about", (req, res, next)=>{
     res.sendFile(__dirname + "/views/About.html")
 })
 
+app.get("/works",(req,res, next) =>{
+    res.sendFile(__dirname + "/views/Works.html")
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
